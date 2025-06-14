@@ -1,7 +1,114 @@
+.visual {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+.visual_text {
+  width: 50%;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+  padding-right: 10%;
+  padding-left: 43px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.visual_text h1 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.visual_text h1 + p {
+  text-transform: uppercase;
+  font-size: 70px;
+}
+.visual_text p {
+  margin-bottom: 20px;
+}
+.visual_text a {
+  width: 100px;
+  font-size: 16px;
+  vertical-align: middle;
+  background-color: #46a358;
+  text-align: center;
+  padding: 8px 15px 8px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 2px solid #46a358;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.visual_text a:hover {
+  color: #46a358;
+  background: #fff;
+  border: 2px solid #46a358;
+}
+.visual_img {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.header_logo,
+.header_menu,
+.header_login {
+  display: inline-block;
+}
+.header {
+  font-size: 0px;
+  border-bottom: 1px solid rgba(70, 163, 80, 0.5);
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+.header_logo {
+  width: 150px;
+  vertical-align: middle;
+}
+.header_menu {
+  width: calc(100% - 350px);
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.header_menu li {
+  display: inline-block;
+  margin: 5px 15px 5px;
+}
+
+.header_menu a {
+  text-decoration: none;
+  color: rgba(61, 61, 61, 1);
+}
+.header_login {
+  width: 100px;
+  font-size: 16px;
+  vertical-align: middle;
+  background-color: #46a358;
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 2px solid #46a358;
+}
+.header_login:hover {
+  color: #46a358;
+  background: #fff;
+  border: 2px solid #46a358;
+}
+
 .form-holder {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
+}
+.form-holder p {
+  text-align: center;
+}
+
+.form-holder li {
+  display: inline-block;
+  margin: 5px 15px 5px;
+  text-align: center;
 }
 input {
   margin-bottom: 5px;
@@ -10,15 +117,15 @@ form {
   width: 90%;
   margin: 0 auto;
 }
-li + li {
+.form-holder li + li {
   color: green;
 }
 /* br+a {width: 300px;  */
 /* text-align: center; */
 /* } */
 .form-holder input {
-  width: 293px;
-  height: 35px;
+  width: 300px;
+  height: 40px;
   border-radius: 5px;
 }
 .form-holder button {
