@@ -1,3 +1,56 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url(../fonts/CeraPro-Regular.woff2) format(.woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url(../fonts/CeraPro-Bold.woff2) format(.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url(../fonts/CeraPro-BoldItalic.woff2) format(.woff2);
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro"), url(../fonts/CeraPro-Black.woff2) format(.woff2);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0px;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+p {
+  margin-top: 0;
+}
+h1 {
+  margin-top: 0;
+}
+h2 {
+  margin-top: 0;
+}
+.conteiner {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer .btn {
+  line-height: 26;
+}
+
 .visual {
   font-size: 0;
   margin-bottom: 20px;
@@ -17,6 +70,8 @@
 .visual_text h1 + p {
   text-transform: uppercase;
   font-size: 70px;
+  font-weight: 900;
+  line-height: 70px;
 }
 .visual_text p {
   margin-bottom: 20px;
@@ -24,13 +79,13 @@
 .green_text {
   color: #46a358;
 }
-.visual_text a {
+.btn {
   width: 100px;
   font-size: 16px;
   vertical-align: middle;
   background-color: #46a358;
   text-align: center;
-  padding: 8px 15px;
+  padding: 8px;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
@@ -38,10 +93,13 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.visual_text a:hover {
+.btn:hover {
   color: #46a358;
   background: #fff;
   border: 2px solid #46a358;
+}
+.visual .btn {
+  text-transform: uppercase;
 }
 .visual_img {
   width: 50%;
@@ -67,6 +125,7 @@
 .header_menu {
   width: calc(100% - 250px);
   font-size: 16px;
+  line-height: 16px;
   text-align: center;
   vertical-align: middle;
 }
@@ -79,31 +138,17 @@
   text-decoration: none;
   color: rgba(61, 61, 61, 1);
 }
-
-.header_menu a:hover {
+.header_menu .active a {
   color: black;
-  padding-bottom: 27px;
+  font-weight: 700px;
+  padding-bottom: 33px;
   border-bottom: 3px solid #46a358;
 }
-
-.header_login {
-  width: 100px;
-  font-size: 16px;
-  vertical-align: middle;
-  background-color: #46a358;
-  text-align: center;
-  padding: 8px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  border: 2px solid #46a358;
+.header_menu a:hover {
+  color: black;
+  padding-bottom: 33px;
+  border-bottom: 3px solid #46a358;
 }
-.header_login:hover {
-  color: #46a358;
-  background: #fff;
-  border: 2px solid #46a358;
-}
-
 .form-holder {
   max-width: 400px;
   margin: 0 auto;
@@ -128,9 +173,6 @@ form {
 .form-holder li + li {
   color: green;
 }
-/* br+a {width: 300px;  */
-/* text-align: center; */
-/* } */
 .form-holder input {
   width: 300px;
   height: 40px;
@@ -151,4 +193,47 @@ form {
   width: 300px;
   height: 40px;
   text-align: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.aside_left {
+  width: 370px;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+.aside_left a {
+  text-decoration: none;
+  color: rgba(61, 61, 61, 1);
+  margin-left: 15px;
+}
+.aside_left a:hover {
+  color: black;
+}
+.aside_left h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.float-right {
+  float: right;
+}
+.section_right {
+  width: calc(100% - 370px);
+  background-color: rgba(245, 245, 245, 0.5);
+}
+.plants p + p {
+  color: rgba(70, 163, 88, 1);
+  font-weight: 700;
+}
+.selection-pages {
+  with: 370px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
