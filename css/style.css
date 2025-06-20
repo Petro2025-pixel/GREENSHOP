@@ -1,27 +1,27 @@
 @font-face {
   font-family: "Cera Pro";
-  src: local("Cera Pro"), url(../fonts/CeraPro-Regular.woff2) format(.woff2);
+  src: local("Cera Pro"), url(../fonts/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Cera Pro";
-  src: local("Cera Pro"), url(../fonts/CeraPro-Bold.woff2) format(.woff2);
+  src: local("Cera Pro"), url(../fonts/CeraPro-Bold.woff2) format(woff2);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Cera Pro";
-  src: local("Cera Pro"), url(../fonts/CeraPro-BoldItalic.woff2) format(.woff2);
+  src: local("Cera Pro"), url(../fonts/CeraPro-BoldItalic.woff2) format(woff2);
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Cera Pro";
-  src: local("Cera Pro"), url(../fonts/CeraPro-Black.woff2) format(.woff2);
+  src: local("Cera Pro"), url(../fonts/CeraPro-Black.woff2) format(woff2);
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -80,6 +80,7 @@ h2 {
   color: #46a358;
 }
 .btn {
+  display: inline-block;
   width: 100px;
   font-size: 16px;
   vertical-align: middle;
@@ -90,8 +91,15 @@ h2 {
   text-decoration: none;
   border-radius: 6px;
   border: 2px solid #46a358;
-  margin-top: 30px;
-  margin-bottom: 30px;
+}
+.btn-small {
+  width: 50px;
+}
+.btn-big {
+  width: 150px;
+}
+.btn-medium {
+  width: 100px;
 }
 .btn:hover {
   color: #46a358;
@@ -138,17 +146,20 @@ h2 {
   text-decoration: none;
   color: rgba(61, 61, 61, 1);
 }
-.header_menu .active a {
-  color: black;
-  font-weight: 700px;
-  padding-bottom: 33px;
-  border-bottom: 3px solid #46a358;
-}
+
 .header_menu a:hover {
   color: black;
   padding-bottom: 33px;
   border-bottom: 3px solid #46a358;
 }
+
+.header_menu .active a {
+  color: black;
+  font-weight: 700;
+  padding-bottom: 33px;
+  border-bottom: 3px solid #46a358;
+}
+
 .form-holder {
   max-width: 400px;
   margin: 0 auto;
@@ -199,9 +210,14 @@ form {
   float: left;
 }
 
+.gray-background {
+  margin: 10px;
+  background-color: rgba(245, 245, 245, 0.5);
+}
 .aside_left {
   width: 370px;
-  background-color: rgba(245, 245, 245, 0.5);
+  padding-left: 15px;
+  display: inline-block;
 }
 .aside_left a {
   text-decoration: none;
@@ -210,6 +226,16 @@ form {
 }
 .aside_left a:hover {
   color: black;
+  text-decoration: underline;
+}
+
+.distance {
+  margin-bottom: 20px;
+}
+
+.aside_left .active a {
+  font-weight: 700px;
+  text-decoration: underline;
 }
 .aside_left h2 {
   font-size: 16px;
@@ -217,19 +243,91 @@ form {
   margin-left: 10px;
   margin-top: 10px;
 }
+
 .float-right {
   float: right;
 }
 .section_right {
-  width: calc(100% - 370px);
-  background-color: rgba(245, 245, 245, 0.5);
+  width: calc(100% - 390px);
+  display: inline-block;
 }
-.plants p + p {
+
+.right-menu {
+  width: 700px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.right-menu li {
+  display: inline-block;
+  margin: 5px 15px 5px;
+}
+.left-right-menu {
+  display: inline-block;
+  width: 340px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  vertical-align: middle;
+}
+.right-right-menu {
+  display: inline-block;
+  width: 340px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right;
+  vertical-align: middle;
+  margin-left: auto;
+}
+.right-menu a {
+  text-decoration: none;
+  color: rgba(61, 61, 61, 1);
+}
+.right-menu a:hover {
+  color: #46a358;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #46a358;
+}
+.right-menu .active a {
+  color: #46a358;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #46a358;
+}
+.green-price {
   color: rgba(70, 163, 88, 1);
   font-weight: 700;
 }
 .selection-pages {
-  with: 370px;
+  width: 215px;
+}
+
+.selection-pages li {
+  display: inline-block;
+}
+
+.selection-pages .btn {
+  display: inline-block;
+  width: 50px;
+  font-size: 16px;
+  vertical-align: middle;
+  background-color: #fff;
+  text-align: center;
+  padding: 8px;
+  color: #46a358;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 2px solid #46a358;
+}
+.selection-pages .btn:hover {
+  color: #fff;
+  background: #46a358;
+}
+
+.selection-pages .active .btn {
+  color: #fff;
+  background: #46a358;
 }
 
 .clearfix::after {
