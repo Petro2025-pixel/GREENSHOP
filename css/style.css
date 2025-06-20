@@ -149,14 +149,14 @@ h2 {
 
 .header_menu a:hover {
   color: black;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
   border-bottom: 3px solid #46a358;
 }
 
 .header_menu .active a {
   color: black;
   font-weight: 700;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
   border-bottom: 3px solid #46a358;
 }
 
