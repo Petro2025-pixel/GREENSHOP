@@ -8,39 +8,144 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="conteiner header">
       <strong class="header_logo">
-        <img src="images/logo_greenshop.png" alt="greenshop" />
+        <img src="images/logo_greenshop.svg" alt="greenshop" />
       </strong>
       <nav class="header_menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#shop">Shop</a></li>
           <li><a href="">Plant Care</a></li>
           <li><a href="">Blogs</a></li>
         </ul>
       </nav>
-      <a href="registration.html" class="header_login">Login</a>
+      <a href="registration.html" class="btn btn-medium">Login</a>
     </header>
     <main>
-      <section class="visual">
-        <div class="visual_text">
-          <h1>Welcome to Greenshop</h1>
-          <p>Let's make a better <span class="green_text">planet</span></p>
-          <p>
-            We are an online plant shop offering a wide range of cheap and
-            trendy plants. Use our plants to create an unique Urban Jugle. Order
-            your favorite plants!
-          </p>
-          <a href="#shop">SHOP NOW</a>
-        </div>
-        <div class="visual_img">
-          <img src="images/img-banner.png" alt="flowers" />
-        </div>
-      </section>
+      <div class="conteiner">
+        <section class="visual">
+          <div class="visual_text">
+            <h1>Welcome to Greenshop</h1>
+            <p>Let's make a better <span class="green_text">planet</span></p>
+            <p>
+              We are an online plant shop offering a wide range of cheap and
+              trendy plants. Use our plants to create an unique Urban Jugle.
+              Order your favorite plants!
+            </p>
+            <a href="#shop" class="btn btn-big">Shop now</a>
+          </div>
+          <div class="visual_img">
+            <img src="images/img-banner.png" alt="flowers" />
+          </div>
+        </section>
+      </div>
+      <div class="conteiner clearfix">
+        <aside class="aside_left gray-background float-left">
+          <h2>Categories</h2>
+          <nav class="distance">
+            <ul>
+              <li class="active"><a href="">House Plants</a></li>
+              <li><a href="">Potter Plants</a></li>
+              <li><a href="">Seeds</a></li>
+              <li><a href="">Small Plants</a></li>
+              <li><a href="">Big Plants</a></li>
+              <li><a href="">Succulents</a></li>
+              <li><a href="">Trerrariums</a></li>
+              <li><a href="">Gardening</a></li>
+              <li><a href="">Accessories</a></li>
+            </ul>
+          </nav>
+          <a href="">
+            <img src="images/super-sale-banner.png" alt="super sale" />
+          </a>
+        </aside>
+        <section class="section_right float-right clearfix">
+          <div class="right-menu">
+            <div class="left-right-menu">
+              <ul>
+                <li class="active"><a href="">All plants</a></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Sale</a></li>
+              </ul>
+            </div>
+            <div class="right-right-menu float-right">
+              <b>Shorts by:</b>
+              <select name="Default sorting">
+                <option value="Barberton Daisy">Barberton Daisy</option>
+                <option value="Angel Wing Begonia">Angel Wing Begonia</option>
+                <option value="African Violet">African Violet</option>
+                <option value="Beach Spider Lily">Beach Spider Lily</option>
+                <option value="Blushing Bromeliad">Blushing Bromeliad</option>
+                <option value="Aluminum Plant">Aluminum Plant</option>
+                <option value="Bird's Nest Fern">Bird's Nest Fern</option>
+                <option value="Broadleaf Lady Palm">Broadleaf Lady Palm</option>
+                <option value="Chinese Evergreen">Chinese Evergreen</option>
+              </select>
+            </div>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p1.png" alt="pict1" />
+            <p>Barberton Daisy</p>
+            <p class="green-price">$119</p>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p2.png" alt="pict2" />
+            <p>Angel Wing Begonia</p>
+            <p class="green-price">$169</p>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p3.png" alt="pict3" />
+            <p>African Violet</p>
+            <p class="green-price">$199</p>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p4.png" alt="pict4" />
+            <p>Beach Spider Lily</p>
+            <p class="green-price">$129</p>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p5.png" alt="pict5" />
+            <p>Blushing Bromeliad</p>
+            <p class="green-price">$139</p>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p6.png" alt="pict6" />
+            <p>Aluminum Plant</p>
+            <p class="green-price">$179</p>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p7.png" alt="pict7" />
+            <p>Bird's Nest Fern</p>
+            <p class="green-price">$99</p>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p8.png" alt="pict8" />
+            <p>Broadleaf Lady Palm</p>
+            <p class="green-price">$59</p>
+          </div>
+          <div class="plants float-left">
+            <img class="gray-background" src="images/p9.png" alt="pict9" />
+            <p>Chinese Evergreen</p>
+            <p class="green-price">$39</p>
+          </div>
+          <div class="selection-pages float-right">
+            <nav>
+              <ul>
+                <li class="active">
+                  <a href="index.html" class="btn btn-small">1</a>
+                </li>
+                <li><a href="index.html" class="btn btn-small">2</a></li>
+                <li><a href="index.html" class="btn btn-small">3</a></li>
+                <li><a href="index.html" class="btn btn-small">4</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer>
-      <a href="index.html">Main</a>
+    <footer class="conteiner">
+      <a href="index.html" class="btn btn-medium">Main</a>
     </footer>
   </body>
 </html>
