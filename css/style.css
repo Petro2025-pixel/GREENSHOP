@@ -98,6 +98,9 @@ h2 {
 .btn-big {
   width: 150px;
 }
+.btn-140 {
+  width: 140px;
+}
 .btn-medium {
   width: 100px;
 }
@@ -344,8 +347,8 @@ form {
   margin: 30px auto;
   padding: 0 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: stretch;
   gap: 30px;
 }
 .fl-gorizont-frame {
@@ -360,17 +363,22 @@ form {
   margin-top: -40px;
 }
 .fl-gorizont-frame-text {
-  padding-top: 30px;
-  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(114, 114, 114, 1);
 }
 
 .fl-gorizont-frame-text h2 {
   font-size: 18px;
   font-weight: 900;
   line-height: 24px;
-  text-align: right;
+  text-transform: uppercase;
+  color: rgba(61, 61, 61, 1);
 }
-
+.fl-gorizont-frame-text .btn {
+  margin-top: 14px;
+}
 .fl-conteiner {
   max-width: 1230px;
   margin: 0 auto;
@@ -387,14 +395,13 @@ form {
 }
 .fl-conteiner-box {
   display: flex;
-  max-width: 1200px;
   gap: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .fl-conteiner-cards {
-  width: 25px;
+  width: 25%;
   flex-grow: 1;
   text-align: left;
 }
