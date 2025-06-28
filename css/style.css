@@ -28,6 +28,7 @@
 }
 body {
   margin: 0px;
+  padding-top: 100px;
   font-family: "Cera Pro", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -128,6 +129,12 @@ h2 {
   border-bottom: 1px solid rgba(70, 163, 80, 0.5);
   padding: 20px 0px;
   margin-bottom: 20px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 .header_logo {
   width: 150px;
@@ -293,6 +300,51 @@ form {
 }
 .plants {
   margin: 10px;
+  position: relative;
+  border-top: 1px solid rgba(245, 245, 245, 0.5);
+}
+.plants:hover {
+  border-top: 1px solid rgba(70, 163, 88, 1);
+  cursor: pointer;
+}
+.plants-link {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  bottom: 55px;
+  justify-content: center;
+}
+.plants-link li {
+  padding: 3px 3px;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin: 5px;
+  border-radius: 4px;
+}
+.plants:hover .plants-link {
+  display: flex;
+}
+
+.sale {
+  /*
+  width: 80px;
+  height: 29px;*/
+  padding: 7px;
+  background: rgba(70, 163, 88, 1);
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  z-index: 5;
 }
 .green-price {
   color: rgba(70, 163, 88, 1);
@@ -340,9 +392,12 @@ form {
   margin: 30px auto;
   padding: 0 15px;
   display: flex;
-  justify-content: space-around;
   align-items: stretch;
   gap: 30px;
+}
+
+.container {
+  justify-content: space-around;
 }
 .fl-gorizont-frame {
   width: 50%;
@@ -350,7 +405,7 @@ form {
   align-items: center;
   justify-content: space-between;
   text-align: right;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 .fl-gorizont-frame img {
   margin-top: -40px;
