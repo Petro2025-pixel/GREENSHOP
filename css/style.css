@@ -140,34 +140,113 @@ h2 {
   width: 150px;
   vertical-align: middle;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header_menu-list .active > a {
+  font-weight: 700;
+  color: #000;
+}
+.header_menu-list > li:not(.active):hover > a {
+  color: green;
+}
+
+.header_menu-list .active::after,
+.header_menu-list > li:hover::after {
+  font-weight: bold;
+  content: "";
+  height: 3px;
+  width: 100%;
+  display: inline-block;
+  background: green;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -35px;
+}
+
+.header_menu-list {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.header_menu-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header_menu-list > li {
+  position: relative;
+}
+
+.header_menu-list > li:hover .sub-menu {
+  display: block;
+}
+
 .header_menu {
   width: calc(100% - 250px);
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
 }
-.header_menu li {
+.sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding-top: 36px;
+  width: 188px;
+}
+
+.sub-menu li {
+  background: rgba(237, 246, 238, 1);
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.sub-menu li:has(ul) > a::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: solid #000;
+  border-width: 2px 2px 0 0;
   display: inline-block;
-  margin: 5px 15px 5px;
+  position: absolute;
+  right: 13px;
+  top: 11px;
+  transform: rotate(45deg);
+}
+.sub-menu li:hover .second-menu {
+  display: block;
 }
 
-.header_menu a {
-  text-decoration: none;
-  color: rgba(61, 61, 61, 1);
+.sub-menu li:hover > a {
+  background: green;
+  color: #fff;
 }
 
-.header_menu a:hover {
-  color: black;
-  padding-bottom: 31px;
-  border-bottom: 3px solid #46a358;
+.sub-menu li:hover > a::after {
+  border-width: 0 0 2px 2px;
+  border-color: #fff;
+}
+.sub-menu a {
+  display: block;
+  padding: 5px;
+  position: relative;
 }
 
-.header_menu .active a {
-  color: black;
-  font-weight: 700;
-  padding-bottom: 31px;
-  border-bottom: 3px solid #46a358;
+.second-menu {
+  width: 150px;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  padding-top: 36px;
 }
 
 .form-holder {
