@@ -601,15 +601,7 @@ form {
 .footer-list li:nth-child(3) {
   background-image: url(../images/picture-3.png);
 }
-.footer-list li:nth-child(1)::after {
-  content: "";
-  width: 1px;
-  background: rgba(70, 163, 88, 0.1);
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  right: 15px;
-}
+.footer-list li:nth-child(1)::after,
 .footer-list li:nth-child(2)::after {
   content: "";
   width: 1px;
@@ -619,8 +611,8 @@ form {
   bottom: 10px;
   right: 15px;
 }
+
 .footer-list li:nth-child(4) {
-  position: relative;
   padding: 5px;
 }
 .medium-footer p {
@@ -635,6 +627,7 @@ form {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+
   margin: 0;
   background: linear-gradient(
     to right,
@@ -642,6 +635,10 @@ form {
     rgba(82, 195, 104, 1)
   );
 }
+.medium-footer img {
+  vertical-align: middle;
+}
+
 .medium-footer li {
   width: 25%;
 }
@@ -660,11 +657,8 @@ form {
   color: rgba(61, 61, 61, 1);
 }
 .bottom-footer {
-  gap: 10px;
   padding: 10px;
   background: rgba(251, 251, 251, 1);
-  font-size: 14px;
-  font-weight: 400;
   line-height: 30px;
   color: rgba(61, 61, 61, 1);
   border-bottom: 1px solid #46a358;
@@ -686,14 +680,39 @@ form {
 .bot-foot-grow {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  text-align: left;
 }
 .bot-foot-grow > li {
-  width: 100%;
+  width: 25%;
   flex-grow: 1;
 }
 .bot-foot-grow li:last-child img {
   display: block;
   padding-top: 15px;
+}
+
+.enter-emails h2 {
+  padding-bottom: 10px;
+}
+.enter-emails input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding-right: 0px;
+}
+.enter-emails button {
+  width: 50px;
+  height: 40px;
+  background: #46a358;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding-left: 0px;
+}
+.medium-footer a {
+  text-decoration: none;
+}
+.medium-footer address a {
+  text-decoration: none;
+  color: rgba(61, 61, 61, 1);
 }
