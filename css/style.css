@@ -627,7 +627,6 @@ form {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-
   margin: 0;
   background: linear-gradient(
     to right,
@@ -639,12 +638,20 @@ form {
   vertical-align: middle;
 }
 
-.medium-footer li {
-  width: 25%;
+.medium-footer li:nth-child(2) {
+  padding-left: 100px;
+}
+.medium-footer li:nth-child(1) {
+  width: 150px;
+}
+.medium-footer li:nth-child(2),
+.medium-footer li:nth-child(3),
+.medium-footer li:nth-child(4) {
+  width: calc((100% - 150px) / 3);
 }
 .medium-footer li:nth-child(3),
 .medium-footer li:nth-child(2) {
-  text-align: center;
+  text-align: right;
 }
 .medium-footer li:last-child {
   text-align: right;
@@ -709,9 +716,11 @@ form {
   border-radius: 0 4px 4px 0;
   padding-left: 0px;
 }
-.medium-footer a {
-  text-decoration: none;
+
+.medium-footer a:hover {
+  text-decoration: underline;
 }
+
 .medium-footer address a {
   text-decoration: none;
   color: rgba(61, 61, 61, 1);
