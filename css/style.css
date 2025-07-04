@@ -638,7 +638,15 @@ form {
   vertical-align: middle;
 }
 
-.medium-footer li:nth-child(2) {
+.medium-footer li {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.medium-footer li > * {
+  max-width: 200px;
+}
+/* .medium-footer li:nth-child(2) {
   padding-left: 100px;
 }
 .medium-footer li:nth-child(1) {
@@ -655,7 +663,7 @@ form {
 }
 .medium-footer li:last-child {
   text-align: right;
-}
+} */
 
 .bottom-footer h2 {
   font-size: 18px;
@@ -715,6 +723,10 @@ form {
   border: none;
   border-radius: 0 4px 4px 0;
   padding-left: 0px;
+}
+.enter-emails button:hover {
+  color: black;
+  cursor: pointer;
 }
 
 .medium-footer a:hover {
