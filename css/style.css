@@ -94,25 +94,23 @@ h2 {
   border: 2px solid #46a358;
 }
 
-.header .btn.btn-medium .social-icon {
+.btn .social-icon {
   fill: white;
+}
+.btn:hover .social-icon {
+  fill: #46a358;
+  transition: transform 0.25s;
+}
+.header .btn.btn-medium .social-icon {
   vertical-align: middle;
 }
 
 .header .btn.btn-medium:hover .social-icon {
-  fill: #46a358;
-  vertical-align: middle;
   transform: scaleX(0.8) translateX(3px);
-  transition: transform 0.25s;
 }
 
-.btn.btn-140 .social-icon {
-  fill: white;
-}
 .btn.btn-140:hover .social-icon {
   transform: scaleX(1.4) translateX(3px);
-  fill: #46a358;
-  transition: transform 0.25s;
 }
 
 .btn-small {
@@ -425,6 +423,11 @@ form {
   bottom: 55px;
   justify-content: center;
 }
+
+.plants-link > li:hover .social-icon {
+  fill: rgba(70, 163, 88, 1);
+}
+
 .plants-link li {
   padding: 3px 3px;
   width: 25px;
