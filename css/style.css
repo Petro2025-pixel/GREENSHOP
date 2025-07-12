@@ -282,6 +282,7 @@ ul {
   margin: 0 auto;
   padding: 20px;
 }
+
 .form-holder p {
   text-align: center;
 }
@@ -810,4 +811,87 @@ form {
 
 .social-media .social-icon {
   fill: rgba(70, 163, 88, 0.6);
+}
+input [type="checkbox"] {
+  background: red;
+  position: absolute;
+  left: -9999px;
+}
+
+.checkbox-line input {
+  display: none;
+}
+.checkbox-line span:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #080808;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 23px;
+  line-height: 8px;
+  margin: 0 10px 0 380px;
+}
+.checkbox-line input:checked + span::before {
+  content: "\2714";
+  color: #46a358;
+}
+@keyframes preloader {
+  0% {
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  12.5% {
+    bottom: 25%;
+    transform: rotate(45deg);
+  }
+  25% {
+    bottom: 50%;
+    transform: rotate(90deg);
+  }
+  37.5% {
+    bottom: 75%;
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 87%;
+    transform: rotate(180deg);
+  }
+  62.5% {
+    bottom: 75%;
+    transform: rotate(225deg);
+  }
+  75% {
+    bottom: 50%;
+    transform: rotate(270deg);
+  }
+  87.5% {
+    bottom: 25%;
+    transform: rotate(315deg);
+  }
+  100% {
+    bottom: 0%;
+    transform: rotate(360deg);
+  }
+}
+.baner-preloader {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin: 10px auto 10px 800px;
+  border: 1px solid #46a358;
+  position: relative;
+  box-shadow: 3px 3px 3px #b9b9b9;
+}
+.hourglass:after {
+  animation: preloader 2.5s linear 0s infinite normal both;
+
+  font-size: 30px;
+}
+
+.hourglass:after {
+  content: "\231B";
+  position: absolute;
+  left: 45%;
 }
