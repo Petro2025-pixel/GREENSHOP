@@ -692,6 +692,10 @@ form {
 .footer-list li:nth-child(4) {
   padding-left: 10px;
 }
+.footer-list li:nth-child(4) h2 {
+  line-height: 34px;
+}
+
 .medium-footer p {
   display: inline-block;
   font-size: 14px;
